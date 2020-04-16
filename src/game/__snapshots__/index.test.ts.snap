@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`game reducer, issue case immer proxy leak 1`] = `
+Object {
+  "boardSize": 4,
+  "moveCount": 2,
+  "moveHistory": Array [
+    "left",
+    "up",
+  ],
+  "nextValidMoves": Array [
+    "right",
+    "up",
+    "down",
+  ],
+  "pieces": Array [
+    Object {
+      "id": "1",
+      "moved": Object {
+        "combine": "pzqf9gpiej",
+        "from": Array [
+          0,
+          2,
+        ],
+      },
+      "position": Array [
+        0,
+        0,
+      ],
+      "removed": true,
+      "score": 2,
+    },
+    Object {
+      "id": "2",
+      "moved": Object {
+        "from": Array [
+          0,
+          3,
+        ],
+      },
+      "position": Array [
+        0,
+        1,
+      ],
+      "score": 4,
+    },
+    Object {
+      "id": "pzqf9gpiej",
+      "position": Array [
+        0,
+        0,
+      ],
+      "score": 4,
+    },
+    Object {
+      "id": "2cpkkn7ud6q",
+      "moved": Object {
+        "from": null,
+      },
+      "position": Array [
+        1,
+        1,
+      ],
+      "score": 2,
+    },
+    Object {
+      "id": "1dfa49b3tmh",
+      "moved": Object {
+        "from": null,
+      },
+      "position": Array [
+        2,
+        1,
+      ],
+      "score": 4,
+    },
+  ],
+}
+`;
+
+exports[`game reducer, issue case immer proxy leak 2 1`] = `
+Object {
+  "boardSize": 4,
+  "moveCount": 4,
+  "moveHistory": Array [
+    "left",
+    "up",
+    "up",
+    "left",
+  ],
+  "nextValidMoves": Array [
+    "left",
+    "right",
+    "up",
+    "down",
+  ],
+  "pieces": Array [
+    Object {
+      "id": "pzqf9gpiej",
+      "position": Array [
+        0,
+        0,
+      ],
+      "score": 8,
+    },
+    Object {
+      "id": "2cpkkn7ud6q",
+      "position": Array [
+        1,
+        0,
+      ],
+      "score": 2,
+    },
+    Object {
+      "id": "1dfa49b3tmh",
+      "position": Array [
+        2,
+        0,
+      ],
+      "score": 4,
+    },
+    Object {
+      "id": "13tjtrfqovt",
+      "moved": Object {
+        "from": Array [
+          1,
+          3,
+        ],
+      },
+      "position": Array [
+        0,
+        3,
+      ],
+      "score": 2,
+    },
+    Object {
+      "id": "20d66eykrvw",
+      "moved": Object {
+        "from": null,
+      },
+      "position": Array [
+        2,
+        1,
+      ],
+      "score": 4,
+    },
+  ],
+}
+`;
+
+exports[`game reducer, issue case immer proxy leak 3 1`] = `
+Object {
+  "boardSize": 4,
+  "moveCount": 2,
+  "moveHistory": Array [
+    "left",
+    "down",
+  ],
+  "nextValidMoves": Array [
+    "left",
+    "right",
+    "up",
+    "down",
+  ],
+  "pieces": Array [
+    Object {
+      "id": "1",
+      "position": Array [
+        0,
+        2,
+      ],
+      "score": 4,
+    },
+    Object {
+      "id": "2",
+      "position": Array [
+        0,
+        3,
+      ],
+      "score": 4,
+    },
+    Object {
+      "id": "pzqf9gpiej",
+      "moved": Object {
+        "combine": "1",
+        "from": Array [
+          0,
+          0,
+        ],
+      },
+      "position": Array [
+        0,
+        2,
+      ],
+      "removed": true,
+      "score": 2,
+    },
+    Object {
+      "id": "5hpuut55iu",
+      "moved": Object {
+        "from": null,
+      },
+      "position": Array [
+        1,
+        0,
+      ],
+      "score": 4,
+    },
+  ],
+}
+`;
