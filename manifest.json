@@ -1,0 +1,45 @@
+{
+  "short_name": "YAR2048",
+  "name": "Yet Another React 2048",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "yar2048logo-64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "yar2048logo-160.png",
+      "sizes": "160x160",
+      "type": "image/png"
+    },
+    {
+      "src": "yar2048logo-160.svg",
+      "sizes": "160x160",
+      "type": "image/svg"
+    },
+    {
+      "src": "yar2048logo-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "yar2048logo-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "yar2048logo.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffc107",
+  "background_color": "#303030"
+}
