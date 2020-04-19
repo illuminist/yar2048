@@ -2,7 +2,7 @@
   "name": "yar2048",
   "version": "0.1.0",
   "repository": "https://github.com/illuminist/yar2048",
-  "homepage": "http://illuminist.github.io",
+  "homepage": "http://illuminist.github.io/yar2048",
   "license": "MIT",
   "author": "Witsarut Sawetkanit",
   "dependencies": {
@@ -44,8 +44,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy": "npm run build && node ./scripts/generateIndexFile.js",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "PUBLIC_URL=https://illuminist.github.io/yar2048 gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -53,7 +53,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.2%  ",
       "not dead",
       "not op_mini all"
     ],
