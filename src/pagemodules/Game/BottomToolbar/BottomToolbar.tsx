@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import settings from 'store/settings'
 import HelpDialogButton from '../HelpDialogButton'
 import GithubLogo from 'svg/GithubLogo'
+import ExternalLink from 'components/ExternalLink'
 
 export interface BottomToolbarProps {
   classes?: Partial<ReturnType<typeof useStyles>>
@@ -27,7 +28,7 @@ export const BottomToolbar: React.FC<BottomToolbarProps> = (props) => {
     <Toolbar className={classNames(className, classes.root)} disableGutters>
       <NewGameButton />
       <HelpDialogButton />
-      <IconButton edge="start">
+      <IconButton component={ExternalLink} edge="start" href="#">
         <GithubLogo />
       </IconButton>
       <FormControlLabel
