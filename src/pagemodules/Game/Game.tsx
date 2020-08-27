@@ -47,7 +47,7 @@ export const Game: React.FC<GameProps> = (props) => {
 
   const [tableWidth, setTableWidth] = React.useState(0)
   useResizeObserver(tableRef.current, (e) => {
-    console.log(e.contentRect.width)
+
     setTableWidth(e.contentRect.width)
   })
 

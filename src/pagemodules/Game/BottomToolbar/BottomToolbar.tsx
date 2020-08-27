@@ -28,7 +28,7 @@ export const BottomToolbar: React.FC<BottomToolbarProps> = (props) => {
     <Toolbar className={classNames(className, classes.root)} disableGutters>
       <NewGameButton />
       <HelpDialogButton />
-      <IconButton component={ExternalLink} edge="start" href="#">
+      <IconButton component={ExternalLink} edge="start" href="https://github.com/illuminist/yar2048">
         <GithubLogo />
       </IconButton>
       <FormControlLabel

@@ -82,10 +82,7 @@ declare module '@material-ui/core/styles/createMuiTheme' {
 
 declare module '@material-ui/core/styles/createMixins' {
   interface Mixins {
-    flex: (
-      direction: CSS.FlexDirectionProperty,
-      ...option: string[]
-    ) => CSSProperties
+    flex: (direction: string, ...option: string[]) => CSSProperties
     imageAvatar: () => CSSProperties
     mixBackgroundColor: (theme: Theme, color: string) => CSSProperties
   }
@@ -94,10 +91,7 @@ declare module '@material-ui/core/styles/createMixins' {
 
 declare module '@material-ui/core/styles/createMixins' {
   interface Mixins {
-    flex: (
-      direction: CSS.FlexDirectionProperty,
-      ...option: string[]
-    ) => CSSProperties
+    flex: (direction: string, ...option: string[]) => CSSProperties
     imageAvatar: () => CSSProperties
     mixBackgroundColor: (theme: Theme, color: string) => CSSProperties
   }

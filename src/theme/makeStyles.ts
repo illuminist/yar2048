@@ -1,8 +1,16 @@
 import omit from 'lodash/omit'
 import { Theme } from '@material-ui/core/styles/createMuiTheme'
-import { makeStyles as oriMakeStyles } from '@material-ui/styles'
+import {
+  makeStyles as oriMakeStyles,
+  createGenerateClassName,
+} from '@material-ui/styles'
 
 import { Styles, WithStylesOptions } from '@material-ui/styles/withStyles'
+
+export const generateClassName = createGenerateClassName({
+  productionPrefix: 'yar',
+  disableGlobal: true,
+})
 
 export const makeStyles = <
   Props extends {} = {},

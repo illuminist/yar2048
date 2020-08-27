@@ -38,12 +38,9 @@ export interface EntryLoadingProps {
 
 export const EntryLoading: React.FC<EntryLoadingProps> = (props) => {
   const classes = useStyles(props)
-  const { className } = props
 
   const tableRef = React.useRef<HTMLTableElement | null>(null)
   const cellRefMap = useRefMap2D<HTMLTableCellElement>()
-
-  console.log(tableRef)
 
   return (
     <Provider store={store}>

@@ -67,7 +67,6 @@ export const addPiece = createAction(
 )
 
 export const randomNumberGenerator = (seed: any) => {
-  console.log(JSON.stringify(_.omit(seed, 'startTime')))
   const rand = seedrandom(JSON.stringify(_.omit(seed, 'startTime')))
   return rand
 }
@@ -214,10 +213,7 @@ export const board = createSlice({
           meta: { board: state },
         })
         const moved = state.pieces.some((p) => p.moved?.from)
-        state.pieces.forEach((p) =>
-          console.log(p.id, p.position, p.moved?.from),
-        )
-        console.log(moved)
+
         if (moved && !action.meta.noGen) {
           state.pieces = piecesReducer(state.pieces, addPiece(state))
         }
