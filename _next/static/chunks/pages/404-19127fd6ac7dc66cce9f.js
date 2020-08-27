@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[6],{"i6+/":function(n,i,t){"use strict";t.r(i);var u=t("q1tI"),_=t("nOHt"),o=t.n(_);i.default=function(){return u.useEffect((function(){o.a.replace("/")}),[]),null}},i67r:function(n,i,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/404",function(){return t("i6+/")}])}},[["i67r",0,1,2]]]);

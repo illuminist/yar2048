@@ -3,6 +3,12 @@
   "name": "Yet Another React 2048",
   "icons": [
     {
+      "src": "yar2048logo-maskable-192.png",
+      "type": "image/svg",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
       "src": "favicon.ico",
       "sizes": "64x64",
       "type": "image/x-icon"
@@ -10,32 +16,38 @@
     {
       "src": "yar2048logo-64.png",
       "sizes": "64x64",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "yar2048logo-160.png",
       "sizes": "160x160",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "yar2048logo-160.svg",
       "sizes": "160x160",
-      "type": "image/svg"
+      "type": "image/svg",
+      "purpose": "any"
     },
     {
       "src": "yar2048logo-256.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "256x256",
+      "purpose": "any"
     },
     {
       "src": "yar2048logo-512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
     },
     {
       "src": "yar2048logo.svg",
       "type": "image/svg",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any"
     }
   ],
   "start_url": ".",
